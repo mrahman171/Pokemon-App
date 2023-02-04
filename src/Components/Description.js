@@ -17,7 +17,7 @@ const Description = ({
     posbs6,
 }) => {
     return (
-        <div>
+        <div className="desc">
             <p>
                 <b>Height</b> is <b>{heightpok * 10} cm.</b>
             </p>
