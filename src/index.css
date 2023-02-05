@@ -93,6 +93,24 @@ overflow: hidden;
 white-space: nowrap;
 animation: text 4s steps(15) infinite alternate;
 }
+.app-container h2{
+color: rgb(20, 45, 236);
+text-align: center;
+}
+ 
+.text1{
+	position: relative;
+    overflow: hidden;
+    padding: 1rem;
+    display: flex;
+    border-radius: 1rem;	
+}
+.text-wrapper{
+	position: relative;
+    overflow: hidden;
+    padding: 1rem;
+    border-radius: 1rem;
+}
 
 @keyframes text {
 0% {
@@ -209,4 +227,3 @@ background-image: linear-gradient(
 h3 {
 text-decoration: underline;
 }
-

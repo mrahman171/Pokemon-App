@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import PokemonThumbnail from "./Components/Pokemon";
+import { LoremIpsum, Avatar } from 'react-lorem-ipsum';
 
 function App() {
   const [allPokemons, setAllPokemons] = useState([]);
@@ -62,6 +63,17 @@ function App() {
           onClick={() => getAllPokemons()}>
           More Pokemons
         </button>
+        <h2>Ash & pikachu Arrive in Pokemon Universe</h2>
+        <div className="text1">
+          <div className="text-wrapper">
+            <LoremIpsum p={4} />
+            
+          </div>
+          <div className="text-wrapper">
+            <LoremIpsum p={4} />
+          </div>
+
+        </div>,
       </div>
     </div>
   );
