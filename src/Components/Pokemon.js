@@ -31,10 +31,14 @@ const PokemonThumbnail = ({
             <img src={image} alt={name} />
             <div className="detail-wrapper">
                 <h3>{name.toUpperCase()}</h3>
-                <small>Type : {type}</small>
+                 
                 <button className="pokeinfo"
                     onClick={() => setShow(!show)}>
-                    {show === true ? "Know less..." : "Know more..."}
+                    {"Grass"}
+                </button>
+                <button className="pokeinfo1"
+                    onClick={() => setShow(!show)}>
+                    {"Poison"}
                 </button>
                 {show === true ? (
                     <Description

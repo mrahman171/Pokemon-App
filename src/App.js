@@ -1,6 +1,12 @@
 import React, { useEffect, useState } from "react";
 import PokemonThumbnail from "./Components/Pokemon";
 import { LoremIpsum, Avatar } from 'react-lorem-ipsum';
+import logo from '../src/images/Logo.png';
+import image01 from '../src/images/Image01.png';
+import image02 from '../src/images/Image02.png';
+import image03 from '../src/images/Image03.png';
+import image04 from '../src/images/Image04.png';
+import image05 from '../src/images/Image05.png';
 
 function App() {
   const [allPokemons, setAllPokemons] = useState([]);
@@ -30,8 +36,7 @@ function App() {
 
   return (
     <div className="app-container">
-      <h1>Pokemon Kingdom .</h1>
-
+      <img src={logo} />
       <div className="pokemon-container">
         <div className="all-container">
           {allPokemons.map((pokemon, index) => (
@@ -66,11 +71,33 @@ function App() {
         <h2>Ash & pikachu Arrive in Pokemon Universe</h2>
         <div className="text1">
           <div className="text-wrapper">
-            <LoremIpsum p={4} />
-            
+            <div className="text-wrapper1">
+              <LoremIpsum p={1} />
+              <img src={image03} />
+            </div>
+            <div className="text-wrapper1">
+              <LoremIpsum p={1} />
+              <img src={image04} />
+            </div>
+            <div className="text-wrapper1">
+              <LoremIpsum p={1} />
+              <img src={image02} />
+            </div>
+
+
           </div>
           <div className="text-wrapper">
-            <LoremIpsum p={4} />
+            <LoremIpsum p={1} />
+            <div className="text-wrapper1">
+
+              <img src={image05} />
+              <LoremIpsum p={1} />
+            </div>
+            <div className="text-wrapper1">
+
+              <img src={image01} />
+              <LoremIpsum p={1} />
+            </div>
           </div>
 
         </div>,
