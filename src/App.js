@@ -1,13 +1,9 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, { useEffect, useState } from "react";
 import PokemonThumbnail from "./Components/Pokemon";
-import { LoremIpsum, Avatar } from 'react-lorem-ipsum';
+import Down_side from "./Components/Bottom"; 
 import logo from '../src/images/Logo.png';
-import image01 from '../src/images/Image01.png';
-import image02 from '../src/images/Image02.png';
-import image03 from '../src/images/Image03.png';
-import image04 from '../src/images/Image04.png';
-import image05 from '../src/images/Image05.png';
+ 
 
 function App() {
   const [allPokemons, setAllPokemons] = useState([]);
@@ -69,39 +65,9 @@ function App() {
           onClick={() => getAllPokemons()}>
           More Pokemons
         </button>
-        <h2>Ash & pikachu Arrive in Pokemon Universe</h2>
-        <div className="text1">
-          <div className="text-wrapper">
-            <div className="text-wrapper1">
-              <LoremIpsum p={1} />
-              <img className="images" src={image03} />
-            </div>
-            <div className="text-wrapper1">
-              <LoremIpsum p={1} />
-              <img className="images" src={image04} />
-            </div>
-            <div className="text-wrapper1">
-              <LoremIpsum p={1} />
-              <img className="images" src={image02} />
-            </div>
-
-
+          <div>
+          <Down_side/> 
           </div>
-          <div className="text-wrapper">
-            <LoremIpsum p={1} />
-            <div className="text-wrapper1">
-
-              <img className="images" src={image05} />
-              <LoremIpsum p={1} />
-            </div>
-            <div className="text-wrapper1">
-
-              <img className="images" src={image01} />
-              <LoremIpsum p={1} />
-            </div>
-          </div>
-
-        </div>,
       </div>
     </div>
   );
