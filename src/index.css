@@ -1,11 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
-
 body {
-	margin: 0;
-	font-family: "Satisfy", cursive;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-
+  margin: 0;
+  font-family: "Satisfy", cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 
@@ -19,6 +17,7 @@ body {
 	padding: 3rem 1rem;
 	background: url(../src/images/Background.png) no-repeat center center fixed;
 	background-size: cover;
+	text-decoration: none;
 
 }
 
@@ -59,7 +58,7 @@ body {
 	display: flex;
 	flex-direction: row;
 	border-radius: 1rem;
-	 
+
 }
 
 @keyframes text {
@@ -83,9 +82,11 @@ body {
 
 .all-container {
 	display: flex;
+	flex-direction: row;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
+	text-decoration: none;
 }
 
 .thumb-container {
@@ -151,6 +152,7 @@ h3 {
 	border: none;
 	cursor: pointer;
 	background-color: rgba(0, 0, 0, 0.185);
+	 
 }
 
 .load-more {
@@ -173,7 +175,7 @@ button:hover {
 .pokeinfo {
 	margin: 0 25px;
 	font-family: "Satisfy", cursive;
-	background-image: linear-gradient(180deg, #2af598 0%, #21c432 100%);
+	background-image: linear-gradient(180deg, #2af598 0%, #2562b2 100%);
 }
 
 .pokeinfo1 {
@@ -186,4 +188,12 @@ button:hover {
 
 h3 {
 	text-decoration: underline;
+}
+
+.text-wrapper1>img {
+	margin-top: 5%;
+	width: 30%;
+	height: 60%;
+	margin-right: 5%;
+	margin-left: 5%;
 }

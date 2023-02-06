@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React, { useEffect, useState } from "react";
 import PokemonThumbnail from "./Components/Pokemon";
 import { LoremIpsum, Avatar } from 'react-lorem-ipsum';
@@ -73,15 +74,15 @@ function App() {
           <div className="text-wrapper">
             <div className="text-wrapper1">
               <LoremIpsum p={1} />
-              <img src={image03} />
+              <img className="images" src={image03} />
             </div>
             <div className="text-wrapper1">
               <LoremIpsum p={1} />
-              <img src={image04} />
+              <img className="images" src={image04} />
             </div>
             <div className="text-wrapper1">
               <LoremIpsum p={1} />
-              <img src={image02} />
+              <img className="images" src={image02} />
             </div>
 
 
@@ -90,12 +91,12 @@ function App() {
             <LoremIpsum p={1} />
             <div className="text-wrapper1">
 
-              <img src={image05} />
+              <img className="images" src={image05} />
               <LoremIpsum p={1} />
             </div>
             <div className="text-wrapper1">
 
-              <img src={image01} />
+              <img className="images" src={image01} />
               <LoremIpsum p={1} />
             </div>
           </div>

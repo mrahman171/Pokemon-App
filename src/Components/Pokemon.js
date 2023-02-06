@@ -34,12 +34,9 @@ const PokemonThumbnail = ({
                  
                 <button className="pokeinfo"
                     onClick={() => setShow(!show)}>
-                    {"Grass"}
+                    {show === true ? "Know less..." : "Know more..."}
                 </button>
-                <button className="pokeinfo1"
-                    onClick={() => setShow(!show)}>
-                    {"Poison"}
-                </button>
+                 
                 {show === true ? (
                     <Description
                         weightpok={weight}
