@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
 body {
-  margin: 0;
-  font-family: "Satisfy", cursive;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 
@@ -15,10 +16,8 @@ body {
 	justify-content: center;
 	min-height: 100vh;
 	padding: 3rem 1rem;
-	background: url(../src/images/Background.png) no-repeat center center fixed;
-	background-size: cover;
-	text-decoration: none;
-
+	 
+	 
 }
 
 .app-container h1 {
@@ -78,15 +77,17 @@ body {
 	align-items: center;
 	justify-content: center;
 	margin: 5rem;
+	margin-left: 5%;
 }
 
 .all-container {
 	display: flex;
-	flex-direction: row;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
 	text-decoration: none;
+	background: url(../src/images/Background.png) no-repeat center center fixed;
+	background-size: cover;
 }
 
 .thumb-container {
@@ -99,6 +100,7 @@ body {
 	border: 1px solid #efefef;
 	border-radius: 2rem;
 	min-width: 160px;
+	 
 	text-align: center;
 	box-shadow: 0 3px 15px rgba(0, 0, 0, 0.089);
 }
@@ -133,6 +135,7 @@ h3 {
 	display: flex;
 	flex-direction: row;
 	width: 100%;
+	 
 }
 
 .desc {
@@ -150,7 +153,7 @@ h3 {
 	margin-top: 1rem;
 	height: fit-content;
 	border: none;
-	cursor: pointer;
+	 
 	background-color: rgba(0, 0, 0, 0.185);
 	 
 }
@@ -173,7 +176,8 @@ button:hover {
 }
 
 .pokeinfo {
-	margin: 0 25px;
+	 margin-left: 5%;
+	 
 	font-family: "Satisfy", cursive;
 	background-image: linear-gradient(180deg, #2af598 0%, #2562b2 100%);
 }
@@ -187,13 +191,13 @@ button:hover {
 
 
 h3 {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 .text-wrapper1>img {
 	margin-top: 5%;
 	width: 30%;
-	height: 35%;
+	height: 45%;
 	margin-right: 5%;
 	margin-left: 5%;
 }
