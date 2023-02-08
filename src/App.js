@@ -8,7 +8,7 @@ import logo from '../src/images/Logo.png';
 function App() {
   const [allPokemons, setAllPokemons] = useState([]);
   const [loadPoke, setLoadPoke] = useState(
-    "https://graphql-pokeapi.vercel.app/."
+    "https://pokeapi.co/api/v2/pokemon?limit=20"
   );
   const getAllPokemons = async () => {
     const res = await fetch(loadPoke);
